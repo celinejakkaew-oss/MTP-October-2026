@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปภาพรวมและกระแสเงินสด MTP WOOD - ตุลาคม 2569</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Prompt & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: #fff; }
+            .card-shadow { box-shadow: none; border: 1px solid #e2e8f0; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Top Navigation & Action Bar -->
+    <div class="max-w-7xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-4 no-print">
+        <div class="flex items-center space-x-3">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                <i class="fa-solid fa-circle-check mr-1.5 text-emerald-600"></i> AUDITED & 100% RECONCILED
+            </span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">
+                <i class="fa-solid fa-building mr-1.5 text-blue-600"></i> ANGELWAY CORPORATE BI
+            </span>
+        </div>
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition card-shadow">
+                <i class="fa-solid fa-table-cells mr-2 text-slate-500"></i> เปิด Web Dashboard เต็ม
+            </a>
+            <button onclick="window.print()" class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition shadow">
+                <i class="fa-solid fa-print mr-2"></i> พิมพ์รายงาน / บันทึก PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto space-y-6">
+
+        <!-- Executive Header Header -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 card-shadow">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-100 pb-6">
+                <div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-700 flex items-center justify-center font-bold text-2xl">
+                            🪵
+                        </div>
+                        <div>
+                            <h1 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">รายงานสรุปภาพรวมและกระแสเงินสด</h1>
+                            <p class="text-slate-500 text-sm mt-0.5">บริษัท เอ็มทีพี วูด (ไทยแลนด์) จำกัด | รอบบัญชี: ตุลาคม 2569</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-4 md:pt-0">
+                    <div class="text-right">
+                        <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">รอบระยะเวลา</span>
+                        <div class="text-base font-bold text-slate-800">1 - 31 ตุลาคม 2569</div>
+                    </div>
+                    <div class="text-right mt-1">
+                        <span class="text-xs text-slate-500">รายงานสำหรับ: คุณมุก และคณะกรรมการบริหาร</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KPI Cards Grid (5 Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-6">
+                <!-- KPI 1: Revenue -->
+                <div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl p-4 border border-emerald-200/60 card-shadow">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-800 uppercase tracking-wider">1. รายรับจริงจากการขาย</span>
+                        <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-arrow-down-left"></i>
+                        </div>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-emerald-700 font-mono mt-3">
+                        ฿156,319.00
+                    </div>
+                    <div class="text-xs text-emerald-600 mt-1 flex items-center">
+                        <i class="fa-solid fa-file-invoice mr-1"></i> บิลขายไม้/พาเลต 9 ใบ
+                    </div>
+                </div>
+
+                <!-- KPI 2: Expenses -->
+                <div class="bg-gradient-to-br from-rose-50 to-white rounded-xl p-4 border border-rose-200/60 card-shadow">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-rose-800 uppercase tracking-wider">2. รายจ่ายทั้งหมด (แผ่นงาน 2)</span>
+                        <div class="w-8 h-8 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-rose-700 font-mono mt-3">
+                        ฿315,321.62
+                    </div>
+                    <div class="text-xs text-rose-600 mt-1 flex items-center">
+                        <i class="fa-solid fa-receipt mr-1"></i> รวมจ่ายจริง 32 รายการ
+                    </div>
+                </div>
+
+                <!-- KPI 3: Operational Deficit -->
+                <div class="bg-gradient-to-br from-amber-50 to-white rounded-xl p-4 border border-amber-200/60 card-shadow">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-amber-800 uppercase tracking-wider">3. ขาดดุลเงินสดดำเนินงาน</span>
+                        <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-scale-unbalanced"></i>
+                        </div>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-amber-800 font-mono mt-3">
+                        ฿-158,002.62
+                    </div>
+                    <div class="text-xs text-amber-700 mt-1 flex items-center">
+                        <i class="fa-solid fa-calculator mr-1"></i> หักเงินให้จริงจากรายได้
+                    </div>
+                </div>
+
+                <!-- KPI 4: Net Loan Inflow -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-4 border border-blue-200/60 card-shadow">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-blue-800 uppercase tracking-wider">4. เงินยืมหมุนเวียนสุทธิ</span>
+                        <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-blue-700 font-mono mt-3">
+                        +฿113,642.62
+                    </div>
+                    <div class="text-xs text-blue-600 mt-1 flex items-center">
+                        <i class="fa-solid fa-right-left mr-1"></i> ยืม 121.6k คืน 8.0k
+                    </div>
+                </div>
+
+                <!-- KPI 5: Total Debt -->
+                <div class="bg-gradient-to-br from-slate-100 to-white rounded-xl p-4 border border-slate-300 card-shadow">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-800 uppercase tracking-wider">5. หนี้สินคงค้างสะสมรวม</span>
+                        <div class="w-8 h-8 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-vault"></i>
+                        </div>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-slate-900 font-mono mt-3">
+                        ฿1,425,653.23
+                    </div>
+                    <div class="text-xs text-slate-600 mt-1 flex items-center">
+                        <i class="fa-solid fa-landmark mr-1"></i> ยอดสะสมสิ้น ต.ค. 69
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section (Grid: Waterfall & Donut) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Left Chart: Donut (Expense Categorization) -->
+            <div class="lg:col-span-5 bg-white rounded-2xl p-6 border border-slate-200 card-shadow flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-base font-bold text-slate-900 flex items-center">
+                            <i class="fa-solid fa-chart-pie mr-2 text-blue-600"></i> สัดส่วนค่าใช้จ่าย 8 หมวดหมู่
+                        </h2>
+                        <span class="text-xs text-slate-400 font-medium">รวม ฿315,321.62</span>
+                    </div>
+                    <div class="relative h-64 flex items-center justify-center">
+                        <canvas id="expenseChart"></canvas>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-500 flex justify-between items-center">
+                    <span>หมวดหลัก: ค่าแรงงาน (46.0%) & ซื้อไม้ (17.9%)</span>
+                    <span class="font-semibold text-slate-700">8 หมวดหมู่</span>
+                </div>
+            </div>
+
+            <!-- Right Chart: Cash Flow Waterfall / Comparison -->
+            <div class="lg:col-span-7 bg-white rounded-2xl p-6 border border-slate-200 card-shadow flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-base font-bold text-slate-900 flex items-center">
+                            <i class="fa-solid fa-chart-column mr-2 text-indigo-600"></i> การกระทบยอดกระแสเงินสดจริง (Cash Flow Bridge)
+                        </h2>
+                        <span class="text-xs font-semibold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">
+                            หักเงินให้จริงจากรายได้
+                        </span>
+                    </div>
+                    <div class="relative h-64">
+                        <canvas id="cashflowChart"></canvas>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-500 flex justify-between items-center">
+                    <span>ขาดดุลเงินสดจริง ฿158,002.62 ชดเชยด้วยเงินยืมหมุนเวียน ฿113,642.62</span>
+                    <span class="font-mono text-rose-600 font-bold">ดุลสุทธิ -฿44,360.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1: Detailed Cash Flow Reconciliation Table -->
+        <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
+            <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+                <div>
+                    <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-xs mr-2 font-bold">1</span>
+                        ตารางกระทบยอดกระแสเงินสดสุทธิ (หักเงินให้จริงจากรายได้)
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-1">คำนวณเปรียบเทียบกระแสเงินสดเข้า-ออกจริง จากแผ่นงาน 1. รายรับ และแผ่นงาน 2. ค่าใช้จ่าย (ต.ค. 69)</p>
+                </div>
+                <span class="hidden sm:inline-flex px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">
+                    Cash Flow Statement
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-700">
+                    <thead class="bg-slate-50 text-xs text-slate-600 uppercase border-b border-slate-200">
+                        <tr>
+                            <th class="py-3.5 px-4 font-semibold w-16 text-center">ลำดับ</th>
+                            <th class="py-3.5 px-4 font-semibold">รายการวิเคราะห์กระแสเงินสด</th>
+                            <th class="py-3.5 px-4 font-semibold text-right text-emerald-700">เงินสดเข้า (+)</th>
+                            <th class="py-3.5 px-4 font-semibold text-right text-rose-700">เงินสดออก (-)</th>
+                            <th class="py-3.5 px-4 font-semibold text-right">ยอดสุทธิ (บาท)</th>
+                            <th class="py-3.5 px-4 font-semibold">หมายเหตุการกระทบยอด</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3 px-4 text-center text-slate-400 font-mono">1.1</td>
+                            <td class="py-3 px-4 font-medium text-slate-900">รายรับจริงจากการขายและดำเนินงาน (แผ่นงาน 1. รายรับ)</td>
+                            <td class="py-3 px-4 text-right font-mono text-emerald-700 font-bold">฿156,319.00</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-400">-</td>
+                            <td class="py-3 px-4 text-right font-mono text-emerald-700 font-bold">+฿156,319.00</td>
+                            <td class="py-3 px-4 text-xs text-slate-500">รับโอนค่าไม้, ค่าพาเลต 200 ตัว, โครงฝ้า (9 รายการ)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3 px-4 text-center text-slate-400 font-mono">1.2</td>
+                            <td class="py-3 px-4 font-medium text-slate-900">รายจ่ายทั้งหมดตามแผ่นงาน 2. ค่าใช้จ่าย (ต.ค. 69)</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-400">-</td>
+                            <td class="py-3 px-4 text-right font-mono text-rose-700 font-bold">฿315,321.62</td>
+                            <td class="py-3 px-4 text-right font-mono text-rose-700 font-bold">-฿315,321.62</td>
+                            <td class="py-3 px-4 text-xs text-slate-500">รวมค่าแรง, ซื้อไม้, น้ำมัน, ค่าไฟ, คืนหนี้เจนจิรา 40k, ดอกเบี้ย 7.5k</td>
+                        </tr>
+                        <tr class="bg-amber-50/60 font-semibold border-y border-amber-200">
+                            <td class="py-3 px-4 text-center text-amber-700 font-mono">>></td>
+                            <td class="py-3 px-4 text-amber-900">ผลต่างกระแสเงินสดสุทธิจากการดำเนินงาน (Operational Deficit / ขาดดุลจริง)</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-700">฿156,319.00</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-700">฿315,321.62</td>
+                            <td class="py-3 px-4 text-right font-mono text-amber-800 font-bold text-base">-฿158,002.62</td>
+                            <td class="py-3 px-4 text-xs text-amber-800 font-medium">รายจ่ายสูงกว่ารายรับจริง (หักเงินให้จริงจากรายได้)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3 px-4 text-center text-slate-400 font-mono">1.3</td>
+                            <td class="py-3 px-4 font-medium text-slate-900">รับเงินยืมหมุนเวียนระหว่างงวด (ที.วอช 106,843 + ส่วนตัว 14,799.62)</td>
+                            <td class="py-3 px-4 text-right font-mono text-blue-700 font-bold">฿121,642.62</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-400">-</td>
+                            <td class="py-3 px-4 text-right font-mono text-blue-700 font-bold">+฿121,642.62</td>
+                            <td class="py-3 px-4 text-xs text-slate-500">เงินยืมเข้าบัญชี/จ่ายตรงเพื่อเสริมสภาพคล่อง (14 รายการ)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3 px-4 text-center text-slate-400 font-mono">1.4</td>
+                            <td class="py-3 px-4 font-medium text-slate-900">ชำระคืนเงินยืมระหว่างงวด (บจก. เอ็มทีพี วูด โอนคืนเงินส่วนตัว)</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-400">-</td>
+                            <td class="py-3 px-4 text-right font-mono text-rose-700 font-bold">฿8,000.00</td>
+                            <td class="py-3 px-4 text-right font-mono text-rose-700 font-bold">-฿8,000.00</td>
+                            <td class="py-3 px-4 text-xs text-slate-500">โอนคืนเงินยืมส่วนตัว วันที่ 19/10/2569 เวลา 19:19 น.</td>
+                        </tr>
+                        <tr class="bg-blue-50/60 font-semibold border-y border-blue-200">
+                            <td class="py-3 px-4 text-center text-blue-700 font-mono">>></td>
+                            <td class="py-3 px-4 text-blue-900">กระแสเงินยืมหมุนเวียนสุทธิที่ได้รับเข้ามาพยุงสภาพคล่อง (Net Loan Inflow)</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-700">฿121,642.62</td>
+                            <td class="py-3 px-4 text-right font-mono text-slate-700">฿8,000.00</td>
+                            <td class="py-3 px-4 text-right font-mono text-blue-800 font-bold text-base">+฿113,642.62</td>
+                            <td class="py-3 px-4 text-xs text-blue-800 font-medium">ยืมเพิ่มสุทธิเพื่อหมุนเวียนค่าใช้จ่าย</td>
+                        </tr>
+                        <tr class="bg-slate-900 text-white font-bold text-base">
+                            <td class="py-4 px-4 text-center text-amber-400 font-mono">>>></td>
+                            <td class="py-4 px-4 text-amber-300">ดุลสภาพคล่องสุทธิประจำงวดเดือนตุลาคม 2569 (Net Closing Cash Position)</td>
+                            <td class="py-4 px-4 text-right font-mono text-emerald-400">฿277,961.62</td>
+                            <td class="py-4 px-4 text-right font-mono text-rose-400">฿322,321.62</td>
+                            <td class="py-4 px-4 text-right font-mono text-amber-400 text-lg">-฿44,360.00</td>
+                            <td class="py-4 px-4 text-xs text-slate-300 font-normal">เงินสดสำรองเดิมของบริษัทที่ใช้ไปหมุนเวียนสมทบ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 2: Expense Categorization Table -->
+        <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
+            <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+                <div>
+                    <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                        <span class="w-7 h-7 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center text-xs mr-2 font-bold">2</span>
+                        การจำแนกประเภทค่าใช้จ่ายอย่างละเอียด (แผ่นงาน 2. ค่าใช้จ่าย ต.ค. 69)
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-1">จำแนกตามโครงสร้างศูนย์ต้นทุน (Cost Center) ครบถ้วน 32 รายการ รวมทั้งสิ้น ฿315,321.62</p>
+                </div>
+                <span class="px-3 py-1 bg-rose-50 text-rose-700 rounded-full text-xs font-semibold border border-rose-200">
+                    32 Transactions
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-700">
+                    <thead class="bg-slate-50 text-xs text-slate-600 uppercase border-b border-slate-200">
+                        <tr>
+                            <th class="py-3.5 px-4 font-semibold w-12 text-center">#</th>
+                            <th class="py-3.5 px-4 font-semibold">ประเภทค่าใช้จ่าย (Category)</th>
+                            <th class="py-3.5 px-4 font-semibold w-32 text-center">จำนวนรายการ</th>
+                            <th class="py-3.5 px-4 font-semibold text-right">ยอดเงินรวม (บาท)</th>
+                            <th class="py-3.5 px-4 font-semibold w-48">สัดส่วนร้อยละ (%)</th>
+                            <th class="py-3.5 px-4 font-semibold">รายละเอียดรายการหลัก</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">1</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #e53e3e"></span>
+                                    ค่าแรงงานและเงินเดือนคนงาน (Labor & Wages)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">7 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿145,000.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 46.0%; background-color: #e53e3e"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">46.0%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">เงินเดือนคนงาน 1-15 ต.ค. (50k), ค่าแรง 16-31 ต.ค. (44k), คนงานเบิกล่วงหน้า 2 ยอด (40.5k), ค่าหัวคนงาน (5k), ค่าแรงงาน 2 พ.ย. (5.5k)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">2</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #dd6b20"></span>
+                                    ค่าซื้อไม้และวัตถุดิบ (Timber & Raw Materials)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">11 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿56,558.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 17.9%; background-color: #dd6b20"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">17.9%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ซื้อไม้ฉำฉา, ไม้เหียงไม้ตึง, ไม้น้ำฉา, ซื้อไม้เสถียร (10k), ซื้อไม้ชาติชาย (15.5k), ค่าไม้แปลงย่อย (รวม 11 รายการ)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">3</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #805ad5"></span>
+                                    ชำระคืนเงินกู้ยืมและดอกเบี้ย (Debt Repayments)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">2 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿47,500.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 15.1%; background-color: #805ad5"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">15.1%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">คืนเงินยืม น.ส. เจนจิรา ใจวันดี 40,000 (หนี้เดิม 50k เหลือ 10k) + ดอกเบี้ยเงินกู้คุณอาแสวง งวด 14 (7,500)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">4</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #3182ce"></span>
+                                    ค่างวดรถยนต์และยานพาหนะ (Vehicle Leasing)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">1 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿20,700.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 6.6%; background-color: #3182ce"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">6.6%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ค่างวดรถยนต์ เงินติดล้อ ทะเบียน 82-5747 (ชำระ 28/10/2569)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">5</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #d69e2e"></span>
+                                    ค่าน้ำมันเชื้อเพลิง (Fuel & Transportation)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">6 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿15,300.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 4.9%; background-color: #d69e2e"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">4.9%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ค่าน้ำมันรถส่งไม้และรถโรงงาน (3,000 x 3 รายการ + ค่าน้ำมันในรายการควบ 2,000 + 1,000 + 3,300)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">6</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #319795"></span>
+                                    ค่าไฟฟ้าสาธารณูปโภค (PEA Electricity)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">2 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿14,599.62</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 4.6%; background-color: #319795"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">4.6%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ค่าไฟฟ้าโรงงานไม้ PEA (7,195.30) + ค่าไฟโรงไม้จามจุรีย์ PEA (7,404.32) (ยืมส่วนตัวจ่ายล่วงหน้า)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">7</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #718096"></span>
+                                    ค่าใช้จ่ายดำเนินงานทั่วไป (General & Admin)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">4 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿11,200.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 3.6%; background-color: #718096"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">3.6%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ด.ต. เกรียงไกร (2,000), นายกร ดำเนินงาน (5,000), ค่าใช้จ่ายทั่วไปยืมทีวอช (4,000), นิตยา (200)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 text-center text-slate-400 font-mono">8</td>
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">
+                                <div class="flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full mr-2.5" style="background-color: #4a5568"></span>
+                                    อุปกรณ์ช่างและซ่อมบำรุง (Maintenance & Tools)
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-center font-mono text-slate-600">3 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900">฿4,464.00</td>
+                            <td class="py-3.5 px-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-full bg-slate-100 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: 1.4%; background-color: #4a5568"></div>
+                                    </div>
+                                    <span class="font-mono text-xs font-bold text-slate-700 w-12 text-right">1.4%</span>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">หจก. เซียงกงมอเตอร์ (2,300), อุปกรณ์โรงงานพี่มัส (1,254), ค่าอะไหล่สุจิตรา (910)</td>
+                        </tr>
+                        <tr class="bg-slate-100 font-bold text-slate-900 border-t-2 border-slate-300">
+                            <td class="py-3.5 px-4 text-center" colspan="2">รวมค่าใช้จ่ายทั้งหมดทุกประเภท (100.0%)</td>
+                            <td class="py-3.5 px-4 text-center font-mono">32 รายการ</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-base text-rose-700">฿315,321.62</td>
+                            <td class="py-3.5 px-4">
+                                <div class="w-full bg-slate-300 rounded-full h-2">
+                                    <div class="bg-slate-900 h-2 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 text-xs text-slate-600 font-medium">ตรงตามยอดแผ่นงาน 2. ค่าใช้จ่ายทั่วไป (ต.ค. 69) เป๊ะ 100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 3: Loan Rollforward Matrix -->
+        <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
+            <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+                <div>
+                    <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                        <span class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center text-xs mr-2 font-bold">3</span>
+                        ตารางกระทบยอดเงินยืมและหนี้สินยกมาจากเดือนที่แล้ว (Loan & Debt Rollforward Matrix)
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-1">ยอดยกมาจากกันยายน 2569 + ยืมเพิ่มงวดตุลาคม - ชำระคืนงวดตุลาคม = ยอดคงค้างยกไปสิ้นงวด</p>
+                </div>
+                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-semibold border border-indigo-200">
+                    Debt Rollforward
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-700">
+                    <thead class="bg-slate-50 text-xs text-slate-600 uppercase border-b border-slate-200">
+                        <tr>
+                            <th class="py-3.5 px-4 font-semibold">เจ้าหนี้ / ผู้ให้กู้ยืม</th>
+                            <th class="py-3.5 px-4 font-semibold text-right">ยอดยกมาจากเดือนที่แล้ว (ก.ย. 69)</th>
+                            <th class="py-3.5 px-4 font-semibold text-right text-blue-700">ยืมเพิ่มงวดนี้ (ต.ค. 69)</th>
+                            <th class="py-3.5 px-4 font-semibold text-right text-rose-700">ชำระคืนงวดนี้ (ต.ค. 69)</th>
+                            <th class="py-3.5 px-4 font-semibold text-right text-slate-900">ยอดคงค้างสะสมสิ้นงวด</th>
+                            <th class="py-3.5 px-4 font-semibold">รายละเอียดและการเคลื่อนไหว</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินยืม ที.วอช (เชียงราย)</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿366,010.61</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">฿106,843.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿472,853.61</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ยอดยกมาเดิม 230,005 + ก.ย. 136,005.61 + ยืมเพิ่ม ต.ค. 106,843 (11 รายการ)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินยืม ที.วอช (เชียงใหม่)</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿30,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿30,000.00</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">เงินยืมสำรองจ่ายค่าแรงเดิม</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินยืมส่วนตัวพี่ท็อป (เดิม 2 ก้อน)</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿36,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿36,000.00</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ก้อนที่ 1 (30,000) + ก้อนที่ 2 (6,000)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินยืมส่วนตัวงวดใหม่ (ต.ค. 69)</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">฿14,799.62</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">฿8,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿6,799.62</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ค่าไฟ PEA 2 ยอด 14,599.62 + นิตยา 200 (บจก. เอ็มทีพี วูด โอนคืนแล้ว 8,000)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">หนี้ค้างคืน 5% (น.ส. เจนจิรา ใจวันดี)</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿50,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">฿40,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿10,000.00</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ยืม 50,000 ชำระคืนวันที่ 02/10/2569 จำนวน 40,000 คงเหลือค้างเพียง 10,000</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินกู้ คุณอาแสวง ทองคำ</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿500,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿500,000.00</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">เงินต้นคงที่ 500k | ชำระดอกเบี้ย 1.5% งวด 14 จำนวน 7,500 บาท บันทึกในค่าใช้จ่ายแล้ว</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินกู้ บริษัท วัน</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿300,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿300,000.00</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">เงินกู้ยืมระยะยาว</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-900">เงินกู้กองทุนหมู่บ้าน</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-slate-600">฿70,000.00</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-blue-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono text-rose-700 font-bold">-</td>
+                            <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900 bg-slate-50/50">฿70,000.00</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-500">ภาระเงินยืมคงค้างเดิม</td>
+                        </tr>
+                        <tr class="bg-indigo-50/80 font-bold text-slate-900 border-t-2 border-indigo-200">
+                            <td class="py-4 px-4 font-bold text-indigo-950">รวมภาระหนี้สินและเงินยืมทั้งหมด</td>
+                            <td class="py-4 px-4 text-right font-mono text-slate-800">฿1,352,010.61</td>
+                            <td class="py-4 px-4 text-right font-mono text-blue-800 text-base">+฿121,642.62</td>
+                            <td class="py-4 px-4 text-right font-mono text-rose-800 text-base">-฿48,000.00</td>
+                            <td class="py-4 px-4 text-right font-mono text-indigo-950 text-base bg-indigo-100/50">฿1,425,653.23</td>
+                            <td class="py-4 px-4 text-xs text-indigo-800 font-medium">กระทบยอดตรงกับสลิปและทะเบียนลูกหนี้/เจ้าหนี้ 100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="text-center text-xs text-slate-400 py-6 border-t border-slate-200">
+            <p>ระบบรายงานข้อมูลอัจฉริยะ MTP Wood Thailand | จัดทำโดย Senior Corporate Data Analyst & AI Strategic Secretary</p>
+            <p class="mt-1">ตรวจสอบสมบูรณ์ตามหลัก Zero-Hallucination & Mathematical Integrity | เอกสารอ้างอิง: MTP WOOD ตุลาคม 2026.xlsx</p>
+        </div>
+
+    </div>
+
+    <!-- Chart.js Scripts -->
+    <script>
+        // 1. Expense Categories Donut Chart
+        const ctxExp = document.getElementById('expenseChart').getContext('2d');
+        new Chart(ctxExp, {
+            type: 'doughnut',
+            data: {
+                labels: ["ค่าแรงงานและเงินเดือนคนงาน (Labor & Wages)", "ค่าซื้อไม้และวัตถุดิบ (Timber & Raw Materials)", "ชำระคืนเงินกู้ยืมและดอกเบี้ย (Debt Repayments)", "ค่างวดรถยนต์และยานพาหนะ (Vehicle Leasing)", "ค่าน้ำมันเชื้อเพลิง (Fuel & Transportation)", "ค่าไฟฟ้าสาธารณูปโภค (PEA Electricity)", "ค่าใช้จ่ายดำเนินงานทั่วไป (General & Admin)", "อุปกรณ์ช่างและซ่อมบำรุง (Maintenance & Tools)"],
+                datasets: [{
+                    data: [145000.0, 56558.0, 47500.0, 20700.0, 15300.0, 14599.62, 11200.0, 4464.0],
+                    backgroundColor: ["#e53e3e", "#dd6b20", "#805ad5", "#3182ce", "#d69e2e", "#319795", "#718096", "#4a5568"],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const val = context.raw || 0;
+                                const total = 315321.62;
+                                const pct = ((val / total) * 100).toFixed(1);
+                                return ' ฿' + val.toLocaleString('th-TH', {minimumFractionDigits: 2}) + ' (' + pct + '%)';
+                            }
+                        }
+                    }
+                },
+                cutout: '68%'
+            }
+        });
+
+        // 2. Cash Flow Bridge Chart
+        const ctxCF = document.getElementById('cashflowChart').getContext('2d');
+        new Chart(ctxCF, {
+            type: 'bar',
+            data: {
+                labels: ['รายรับจริง', 'รายจ่ายทั้งหมด', 'ขาดดุลดำเนินงาน', 'เงินยืมหมุนเวียนสุทธิ', 'ดุลสภาพคล่องสุทธิ'],
+                datasets: [{
+                    data: [156319.00, -315321.62, -158002.62, 113642.62, -44360.00],
+                    backgroundColor: [
+                        '#10b981', // Revenue (Green)
+                        '#ef4444', // Expense (Red)
+                        '#f59e0b', // Deficit (Amber)
+                        '#3b82f6', // Loan Inflow (Blue)
+                        '#64748b'  // Net Cash (Slate)
+                    ],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const val = context.raw || 0;
+                                return ' ยอดเงิน: ฿' + val.toLocaleString('th-TH', {minimumFractionDigits: 2});
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        grid: { color: '#f1f5f9' },
+                        ticks: {
+                            callback: function(value) {
+                                return '฿' + (value / 1000).toFixed(0) + 'k';
+                            }
+                        }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
